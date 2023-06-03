@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+    env_file: .env
+    command: web
+    ports:
+      - 8001:8001
